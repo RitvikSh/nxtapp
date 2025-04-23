@@ -4,6 +4,13 @@ import Image from 'next/image';
 import Robot from '../../public/download-removebg-preview.png'
 import HeroImage from '../../public/hero.svg'
 import Gradient from '../../public/Gradient.svg'
+import Marquee from 'react-fast-marquee';
+import Company1 from '../../public/Vector (1).svg'
+import Company2 from '../../public/Vector (2).svg'
+import Company3 from '../../public/Vector (3).svg'
+import Company4 from '../../public/Vector (4).svg'
+import Company5 from '../../public/Vector.svg'
+
 export default function Hero() {
     const test = () => {
         alert("working")
@@ -21,9 +28,21 @@ export default function Hero() {
         </div>
         <div className='relative h-full w-full flex justify-center'>
             <Image src={Gradient} alt='gradient' className='w-full min-h-[200px]' />
-            <div className='absolute'>
-                <Image src={HeroImage} alt='hero' className='lg:w-[800px] mr-2 mt-14 hover:scale-110 duration-500' />
+            <div className='absolute flex flex-col justify-center items-center'>
+                <Image src={HeroImage} alt='hero' className='lg:w-[800px] mt-14 hover:scale-110 duration-500' />
                 <h2 className='text-center text-[16px] font-small'>Trusted by these companies</h2>
+                <Marquee className='flex justify-center items-center mt-5' speed={50} gradient={false} pauseOnHover={true} autoFill={true} loop={0}>
+                    <Image alt='company' src={Company1} className='mx-5 lg
+                    : w-[150px]' />
+                    <Image alt='company' src={Company2} className='mx-5 lg
+                    : w-[150px]' />
+                    <Image alt='company' src={Company3} className='mx-5 lg
+                    : w-[150px]' />
+                    <Image alt='company' src={Company4} className='mx-5 lg
+                    : w-[150px]' />
+                    <Image alt='company' src={Company5} className='mx-5 lg
+                    : w-[150px]' />
+                </Marquee>
             </div>
 
 
