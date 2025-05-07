@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Features() {
     return (
-        <div className='flex-col ml-[10px] lg:flex-row-reverse justify-center   gap-[20px] lg:mt-[100px] mt-[50px] lg:mx-[50px] py-[50px]'>
+        <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex flex-col  lg:flex-row-reverse justify-center gap-[25px] lg:pt-[100px] lg:px-[50px] py-[50px] px-[25px]'>
 
             <div>
                 <p className="font-medium text-[16px]"> Customer Support</p>
@@ -11,7 +11,7 @@ export default function Features() {
 
             </div>
 
-            <Image alt='feature1' src={Feature1} className='w-[300px] lg:w-[400px] mt-5 hover:scale-110 duration-200 lg:mr-[24px] sm:ml-[10px]' />
+            <Image alt='feature1' src={Feature1} className='w-[300px] lg:w-[400px] pt-5 hover:scale-110 duration-200 ' />
 
         </div>
     )
